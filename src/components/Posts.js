@@ -1,18 +1,18 @@
-import Post from './post.js'
+import Post from './Post.js'
 
-const posts = (postEntries) => {
+const Posts = (postEntries) => {
 
   const render = () => {
     let container = document.createElement('div')
+    
     container.className = "posts"
 
-    postEntries.forEach(postItem => container.appendChild(Post(postItem)))
+    postEntries.forEach( post => container.appendChild(Post(post)))
 
     return container
   }
 
   return render()
-  
 }
 
-export default posts
+export default Posts
