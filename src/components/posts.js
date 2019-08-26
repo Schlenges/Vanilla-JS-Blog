@@ -1,28 +1,18 @@
-const post = (postItem) => {
-  let article = document.createElement('article')
-  let title = document.createElement('h1')
-  let textDiv = document.createElement('div')
-  let articleText = document.createElement('p')
-
-  textDiv.setAttribute("id", "text")
-
-  article.appendChild(title)
-  article.appendChild(textDiv)
-  textDiv.appendChild(articleText)
-
-  title.textContent = postItem.title
-  articleText.textContent = postItem.content
-
-  return article
-}
+import Post from './post.js'
 
 const posts = (postEntries) => {
-  let container = document.createElement('div')
-  container.className = "posts"
 
-  postEntries.forEach(postItem => container.appendChild(post(postItem)))
+  const render = () => {
+    let container = document.createElement('div')
+    container.className = "posts"
 
-  return container
+    postEntries.forEach(postItem => container.appendChild(Post(postItem)))
+
+    return container
+  }
+
+  return render()
+  
 }
 
 export default posts
