@@ -1,7 +1,7 @@
-import navbar from './navbar.js'
-import posts from './posts.js'
+import navbar from './components/navbar.js'
+import posts from './components/posts.js'
 
-import postsFile from './posts/posts.js'
+import postsFile from '../posts/posts.js'
 
 let state = {
   "posts": postsFile.posts,
