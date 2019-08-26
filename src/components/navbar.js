@@ -25,11 +25,11 @@ const navItem = (tag, isActive, onClick, onSelect) => {
 }
 
 const navbar = (setTag) => {
-  // state
+
   let state = {
     "tags": ["home", "coding", "nutrition", "mental health"],
     "active": "home",
-    "setActive": (tag) => {state.active = tag; console.log(state.active); renderItem()}
+    "setActive": (tag) => {state.active = tag; renderItem()}
   }
 
   // createElements

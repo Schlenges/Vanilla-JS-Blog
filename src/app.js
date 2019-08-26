@@ -1,5 +1,5 @@
-import navbar from './components/navbar.js'
-import posts from './components/posts.js'
+import Navbar from './components/navbar.js'
+import Posts from './components/posts.js'
 
 import postsFile from '../posts/posts.js'
 
@@ -18,10 +18,10 @@ let container = document.createElement('div')
 
 const renderPosts = () => {
   if(!document.querySelector('.posts')){
-    container.appendChild(navbar(setTag))
-    container.appendChild(posts(state.posts))
+    container.appendChild(Navbar(setTag))
+    container.appendChild(Posts(state.posts))
   } else{
-    container.replaceChild(posts(state.posts), document.querySelector('.posts'))
+    container.replaceChild(Posts(state.posts), document.querySelector('.posts'))
   }
 }
 

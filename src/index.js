@@ -1,3 +1,3 @@
-import app from './app.js'
+import App from './app.js'
 
-document.querySelector('#root').appendChild(app())
+document.querySelector('#root').appendChild(App())
