@@ -6,7 +6,7 @@ const Navbar = (setTag) => {
   let blogTitle
   let navWrap
   let state = {
-    "tags": ["home", "coding", "nutrition", "mental health"],
+    "tags": ["home", /* "coding", "nutrition", "mental health" */],
     "active": "home",
     "setActive": (tag) => {state.active = tag; render()}
   }
